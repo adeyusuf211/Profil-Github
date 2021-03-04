@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins";
+}
+
+:root {
+  --purple: rebeccapurple;
+  --text-color: rgb(253, 223, 248);
+  --font-weight: inherit;
+  --grid: grid;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: var(--grid);
+  place-content: center;
+  background-color: var(--purple);
+}
+
+.card {
+  background-color: rgb(81, 37, 126);
+  color: var(--text-color);
+  padding: 2rem;
+  display: flex;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(14, 13, 13, 0.2);
+}
+
+.user_info {
+  margin-left: 2rem;
+  color: white;
+}
+
+.user_info p {
+  margin: 0.5rem 0;
+}
+
+.user_info .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style-type: none;
+  width: 300px;
+}
+
+.user_info .info li {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background-color: rgb(81, 37, 126);
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
